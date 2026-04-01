@@ -239,5 +239,3 @@ select name from kid inner join (select kid_id from kid_has_parent where parent_
 select kid.name, surname, patronymic, gender, date_of_birth, age, `group`.name from kid 
 inner join `group` on kid.group_idgroup = `group`.id
 where kid.id = 2;
-
-select chat_id from tutor where id = 1
